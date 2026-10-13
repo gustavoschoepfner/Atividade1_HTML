@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Título</h1>
+      <a href="index.html">Voltar</a>
+    </header>
+
+    <main>
+      <section class="first">
+        <h2>Formulário simples</h2>
+        <form id="formulario" action="">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+          </div>
+
+          <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" />
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <input type="senha" id="sehna" />
+          </div>
+
+          <div>
+            <label for="curriculo">Currículo:</label>
+            <input type="file" id="curriculo" />
+          </div>
+
+          <div>
+            <label for="observacoes">Observações: </label>
+            <textarea id="observacoes"></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Listas</h2>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+        <ol>
+          <li>passo 1</li>
+          <li>passo 2</li>
+          <li>passo 3</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Imagens e vídeos</h2>
+        <div>
+          <img width="400" src="imgs/exemplo.png" alt="modelagem" />
+        </div>
+        <div>
+          <img width="400" src="imgs/exemplo.png" alt="modelagem" />
+        </div>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rrglSahVDlU?si=GHSMHlDbZ0rtf1Hu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section>
+          <ol>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></li>
+            <li>
+              <a href="https://www.geoguessr.com/pt" target="_blank">Geoguessr</a>
+            </li>
+          </ol>
+      </section>
+
+      <section>
+          <table>
+            <tr style="border: 1px" style="border-color: black">
+              <th>Horário</th>
+              <th>Seg</th>
+              <th>Ter</th>
+              <th>Qua</th>
+              <th>Qui</th>
+              <th>Sex</th>
+            </tr>
+            <tr>
+              <td>9h</td>
+              <td>matemática</td>
+              <td>português</td>
+              <td>física</td>
+              <td>filosofia</td>
+              <td>inglês</td>
+            </tr>
+            <tr>
+              <td>11h</td>
+              <td>história</td>
+              <td>química</td>
+              <td>espanhol</td>
+              <td>geografia</td>
+              <td>Biologia</td>
+            </tr>
+          </table>
+      </section>
+    </main>
+
+    <footer id="rodape">
+      <p>Todos direitos reservados</p>
+    </footer>
+    <script src="./scripts/exemplo.js"></script>
+  </body>
+</html>
