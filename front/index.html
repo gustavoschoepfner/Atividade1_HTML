@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="styles/style.css"></style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Gestão de Usuários</h1>
+            <p>HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
+        </header>
+
+        <section>
+            <div>
+                <span>Dados do usuário</span>
+                <h2>Gerenciar cadastro</h2>
+            </div>
+
+            <div class="fields">
+                <label class="field">
+                    <span>ID:</span>
+                    <input type="text" id="id" placeholder="Exemplo" autocomplete="off">
+                </label>
+                <label class="field">
+                    <span>CPF:</span>
+                    <input type="text" id="cpf" placeholder="Exemplo" autocomplete="off">
+                </label>
+                <label class="field">
+                    <span>Email:</span>
+                    <input type="text" id="email" placeholder="Exemplo" autocomplete="off">
+                </label>
+            </div>
+
+            <div class="action">
+                <button class="primary" type="button" onclick="criar()">Criar usuário</button>
+                <button class="secondary" type="button" onclick="buscarTodos()"> Buscar todos</button>
+                <button class="secondary" type="button" onclick="alterar()">Alterar</button>
+                <button class="danger" type="button" onclick="deletar()">Deletar</button>
+            </div>
+
+            <p class="feedback" id="resultado"></p>
+
+        </section>
+
+        <section>
+            <h1>Cadastrados</h1>
+            <ul id="listaUsuarios"></ul>
+        </section>
+    </main>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

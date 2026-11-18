@@ -1,9 +1,10 @@
 import express from 'express'
 import db from './repository/index.js'
+import cors from 'cors'
 
 const app = express()
-
-app.use(express.json());
+app.use(express.json())
+app.use(cors())
 
 //CRUD
 
@@ -24,15 +25,7 @@ app.post("/api/v1/pessoa", (req, res) => {
 //READ
 
 app.get("/api/v1/pessoa/:id", (req, res) => { 
-    const id = req.params.id
-    const pessoa = db.find(p => p.id == id) // O que é isso
-
-    if(!pessoa) {
-        res.status(404).send({ message: "Pessoa não encontrada."})
-        return
-    }
-
-    res.send({ message: "Pessoa encontrada com sucesso."})
+    res.send({ pessoas: db})
 })
 
 //UPDATE
@@ -40,7 +33,7 @@ app.get("/api/v1/pessoa/:id", (req, res) => {
 app.put("/api/v1/pessoa/:id", (req, res) => { 
     const id = req.params.id
     const { name } = req.body
-    const pessoa = db.find(it => it.id == id) // O que muda em "it" pra "p" de antes
+    const pessoa = db.find(it => it.id == id) 
 
     if(!pessoa) {
         res.send({ message: "Favor informar id."})
